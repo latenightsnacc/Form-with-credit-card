@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Slabo+27px|Staatliches&display=swap");
+.sC .title {
+  color: white;
+}
+
+.sC #form {
+  background-color: #132226;
+  color: #be9063;
+}
+
+.sC #form input {
+  background-color: #132226;
+  color: #be9063;
+  border-bottom-color: #a4978e;
+}
+
+.sC #form input::-webkit-input-placeholder {
+  color: #be9063;
+}
+
+.sC #form input:-ms-input-placeholder {
+  color: #be9063;
+}
+
+.sC #form input::-ms-input-placeholder {
+  color: #be9063;
+}
+
+.sC #form input::placeholder {
+  color: #be9063;
+}
+
+.sC .card {
+  background-color: #a4978e;
+}
+
+.sC .card input {
+  color: white !important;
+  background-color: #a4978e !important;
+  text-transform: uppercase;
+}
+
+.sC .card:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px #fafafa;
+          box-shadow: 2px 2px 5px 2px #fafafa;
+}
+
+.sC .btn:hover {
+  background-color: #be9063;
+  color: white;
+}
+
+.vintage .title {
+  color: white;
+}
+
+.vintage #form, .vintage #form input {
+  background-color: #0abda0;
+  color: #ebf2ea;
+}
+
+.vintage .card {
+  background-color: #bf9d7a;
+}
+
+.vintage .card input {
+  color: #d4dca9 !important;
+  background-color: #bf9d7a !important;
+  text-transform: uppercase;
+}
+
+.vintage .card:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px #fafafa;
+          box-shadow: 2px 2px 5px 2px #fafafa;
+}
+
+.vintage .btn:hover {
+  background-color: #d4dca9;
+  color: black;
+}
+
+.vividRetro .title {
+  color: #f3d4a0;
+}
+
+.vividRetro #form {
+  background-color: #c0334d;
+  color: #f3d4a0;
+}
+
+.vividRetro #form input {
+  background-color: #c0334d;
+  color: #f3d4a0;
+  border-bottom-color: #8f715b;
+}
+
+.vividRetro #form input::-webkit-input-placeholder {
+  color: #f3d4a0;
+}
+
+.vividRetro #form input:-ms-input-placeholder {
+  color: #f3d4a0;
+}
+
+.vividRetro #form input::-ms-input-placeholder {
+  color: #f3d4a0;
+}
+
+.vividRetro #form input::placeholder {
+  color: #f3d4a0;
+}
+
+.vividRetro .card {
+  background-color: #f1931b;
+}
+
+.vividRetro .card input {
+  color: #d6618f !important;
+  background-color: #f1931b !important;
+  text-transform: uppercase;
+}
+
+.vividRetro .card:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px #fafafa;
+          box-shadow: 2px 2px 5px 2px #fafafa;
+}
+
+.vividRetro .btn:hover {
+  background-color: #f3d4a0;
+  color: #8f715b;
+}
+
+.tA .title {
+  color: #0294a5;
+}
+
+.tA #form {
+  background-color: #04060f;
+  color: #0294a5;
+}
+
+.tA #form input {
+  background-color: #04060f;
+  color: #0294a5;
+  border-bottom-color: #03353e;
+}
+
+.tA #form input::-webkit-input-placeholder {
+  color: #0294a5;
+}
+
+.tA #form input:-ms-input-placeholder {
+  color: #0294a5;
+}
+
+.tA #form input::-ms-input-placeholder {
+  color: #0294a5;
+}
+
+.tA #form input::placeholder {
+  color: #0294a5;
+}
+
+.tA .card {
+  background-color: #c1403d;
+}
+
+.tA .card input {
+  color: #03353e !important;
+  background-color: #c1403d !important;
+  text-transform: uppercase;
+  border-bottom-color: #a79c93;
+}
+
+.tA .card:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px #fafafa;
+          box-shadow: 2px 2px 5px 2px #fafafa;
+}
+
+.tA .btn:hover {
+  background-color: #03353e;
+  color: #a79c93;
+}
+
+.error {
+  color: red;
+  font-family: "Acme", sans-serif;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-family: "Staatliches", cursive;
+}
+
+.card .card-logo {
+  padding: 10px;
+}
+
+.card .card-logo img {
+  max-width: 100px;
+}
+
+.card input {
+  border: none;
+  font-family: "Slabo 27px", serif;
+}
+
+#form {
+  max-width: 600px;
+}
+
+#form .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  width: 90%;
+}
+
+#form .form-row input {
+  padding: 15px;
+  outline: none;
+  font-family: "Acme", sans-serif;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.w-500 {
+  width: 500px;
+}
+
+.btn {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: red;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .w-500 {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

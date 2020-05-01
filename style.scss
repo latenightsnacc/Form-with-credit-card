@@ -1,0 +1,199 @@
+@import 'variables';
+
+// color schemes
+.sC{
+    .title{
+        color: $primary;
+    }
+    #form{
+        background-color: $dark1;
+        color: $brown1;
+
+        input{
+            background-color: $dark1;
+            color: $brown1;
+            border-bottom-color: $ash1;
+
+            &::placeholder{
+                color: $brown1;
+            }
+        }
+    }
+    .card{
+        background-color: $ash1;
+
+        input{
+            color: $primary !important;
+            background-color: $ash1 !important;
+            text-transform: uppercase;
+            //border: none !important;
+        }
+
+        &:hover{
+            box-shadow: $box-shadow;
+        }
+    }
+
+    .btn:hover{
+        background-color: $brown1;
+        color: $primary;
+    }
+}
+.vintage{
+    .title{
+        color: $primary;
+    }
+    #form, #form input{
+        background-color: $green2;
+        color: $coffee2;
+    }
+    .card{
+        background-color: $brown2;
+
+        input{
+            color: $light2 !important;
+            background-color: $brown2 !important;
+            text-transform: uppercase;
+        }
+
+        &:hover{
+            box-shadow: $box-shadow;
+        }
+    }
+    .btn:hover{
+        background-color: $light2;
+        color: $secondary;
+    }
+}
+.vividRetro{
+    .title{
+        color: $milk3;
+    }
+    #form {
+        background-color: $maroon3;
+        color: $milk3;
+
+        input{
+            background-color: $maroon3;
+            color: $milk3;
+            border-bottom-color: $brown3;
+
+            &::placeholder{
+                color: $milk3;
+            }
+        }
+    }
+    .card{
+        background-color: $orange3;
+
+        input{
+            color: $pink3 !important;
+            background-color: $orange3 !important;
+            text-transform: uppercase;
+        }
+
+        &:hover{
+            box-shadow: $box-shadow;
+        }
+    }
+    .btn:hover{
+        background-color: $milk3;
+        color: $brown3;
+    }
+}
+.tA{
+    .title{
+        color: $blue4;
+    }
+    #form {
+        background-color: $black4;
+        color: $blue4;
+
+        input{
+            background-color: $black4;
+            color: $blue4;
+            border-bottom-color: $dark4;
+
+            &::placeholder{
+                color: $blue4;
+            }
+        }
+    }
+    .card{
+        background-color: $red4;
+
+        input{
+            color: $dark4 !important;
+            background-color: $red4 !important;
+            text-transform: uppercase;
+            border-bottom-color: $khaki;
+        }
+
+        &:hover{
+            box-shadow: $box-shadow;
+        }
+    }
+    .btn:hover{
+        background-color: $dark4;
+        color: $khaki;
+    }
+}
+.error{
+    color: red;
+    font-family: $form;
+    font-size: 12px;
+}
+.title{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: $title;
+}
+.card{
+    .card-logo{
+        padding: 10px;
+        img{
+            max-width: 100px;
+        }
+    }
+    input{
+        border: none;
+        font-family: $card;
+    }
+}
+#form{
+    max-width: 600px;
+    .form-row{
+        display: flex;
+        padding: 10px;
+        width: 90%;
+        input{
+            padding: 15px;
+            outline: none;
+            font-family: $form;
+            border: none;
+            border-bottom: 1px solid;
+        }
+    }
+}
+
+.w-500{
+    width: 500px;
+}
+.btn{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: red;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+@media screen and (max-width:600px){
+    .w-500{
+        width: 400px;
+    }
+}

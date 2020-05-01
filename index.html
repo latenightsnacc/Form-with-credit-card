@@ -6,34 +6,57 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-     <title>Form With Credit Card</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Form With Credit Card</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper mt-5">
         <div class="container">
-            <div class="card"></div>
-            <div class="form">
-                <form id="form">
-                    <div class="form-row">
-                        <input id="name" type="text" placeholder="Your Name">
+            <div class="form" id="formDiv">
+                
+                <form id="form" class="mx-auto">
+                    <div class="title pt-3">Personal Details Form</div>
+                    <div class="form-row mx-auto mt-5">
+                        <input id="name" type="text" placeholder="Your Name" class="w-500">
+                        <div class="error"></div>
                     </div>
-                    <div class="form-row">
-                        <input id="email" type="email" placeholder="Your Email">
+                    <div class="form-row mx-auto">
+                        <input id="email" type="email" placeholder="Your Email" class="w-500">
+                        <div class="error"></div>
                     </div>
-                    <div class="form-row">
-                        <input id="phone" type="tel" placeholder="Your Phone Number">
+                    <div class="form-row mx-auto">
+                        <input id="phone" type="tel" placeholder="Your Phone Number" class="w-500">
+                        <div class="error"></div>
                     </div>
-                    <div class="form-row">
-                        <input id="address" type="text" placeholder="Your Address">
+                    <div class="form-row mx-auto">
+                        <input id="address" type="text" placeholder="Your Address" class="w-500">
+                        <div class="error"></div>
                     </div>
-                    <div id="credit-card">Card Details</div>
-                    <div class="form-row">
-                        <input id="card-no" type="text" placeholder="Card Number">
-                        <input id="valid-thru" type="text" placeholder="MM/YY">
-                        <input id="cvv" type="text" placeholder="CVV">
+                    <div class="form-row mx-auto">
+                        <div class="card w-500">
+                            <div class="card-logo d-flex flex-row-reverse">
+                                <img src="assets/logos/Visa.png" id="cardlogo">
+                            </div>
+                            <div class="sim-card">
+                                <i class="fa fa-credit-card-front fa-rotate-270 fa-7x mx-3 p-2 mb-3 w-25"></i>
+                            </div>
+                            <input id="card-no" class="mx-3 p-2 mb-3" type="text" placeholder="####-####-####-####">
+                            <div class="error"></div>
+                            <div class=" d-flex flex-row-reverse">
+                                <input id="cvv" class="mx-3 p-2 mb-3 w-25" type="text" placeholder="CVV">
+                                <div class="error"></div>
+                                <input id="valid-thru" class="mx-3 p-2 mb-3 w-25" type="text" placeholder="MM/YY">
+                                <div class="error"></div>
+                            </div>
+                            <input id="card-name" type="text" placeholder="Card Holder Name" class="mx-3 p-2 mb-3">
+                            <div class="error"></div>
+                        </div>
                     </div>
-                    <button type="submit" id="submit" class="btn">Save</button>
+                    <div class="form-row mx-auto">
+                        <button type="submit" id="submit" class="btn d-block mt-3 mx-auto">Save</button>
+                    </div>
                 </form>
+               
             </div>
         </div>
     </div>
