@@ -1,7 +1,7 @@
 // Form Variables
 let dropDown = document.getElementById('loadDetails');
 let formDiv = document.getElementById('formDiv');
-let name = document.getElementById('name');
+let name1 = document.getElementById('name');
 let email = document.getElementById('email');
 let phone = document.getElementById('phone');
 let address = document.getElementById('address');
@@ -31,6 +31,24 @@ let vividRetro = document.getElementById('vividRetro');
 let tA = document.getElementById('tA');
 let deflt = document.getElementById('default');
 
+vintage.addEventListener('click', addVintage);
+vividRetro.addEventListener('click', addVividRetro);
+sC.addEventListener('click', addSc);
+tA.addEventListener('click', addTa);
+deflt.addEventListener('click', addDefault);
+
+let myStorage = window.localStorage;
+
+window.addEventListener('load', (event) => {
+    name1.value = myStorage.getItem("name");
+    email.value  = myStorage.getItem("email");
+    phone.value  = myStorage.getItem("phone");
+    address.value  = myStorage.getItem("address");
+    cardName.value  = myStorage.getItem("cardName");
+    cardNo.value  = myStorage.getItem("cardNo");
+    cardCvv.value  = myStorage.getItem("cardCvv");
+    cardDate.value  = myStorage.getItem("CardDate");
+  });
 // This function adds the vintage class to the formDiv
 function addVintage(e){
     formDiv.classList.remove('sC');
@@ -67,28 +85,9 @@ function addDefault(e){
 btn.addEventListener('click', validateForm);
 // btn.addEventListener('input', addLogo);
 
-function bindDetailsToDropDown(pD) {
-        
-    dropDown.options.length = 0;
-
-    let el = document.createElement("option");
-    el.textContent = "...Select Personal Details...";
-    dropDown.appendChild(el);
-
-
-    for (let i = 0; i < PersonalDetailsList.length; i++) {
-        let pD = PersonalDetailsList[i];
-
-        let el = document.createElement("option");
-        el.textContent = "Personal Details Of " + pD.UserName;
-        el.value = pD.Id.toString();
-        dropDown.appendChild(el);
-    }
-}
-
 // This function validates the form input.
 function validateForm(e){
-    if(name.value === '' || name == null){
+    if(name1.value === '' || name1 == null){
         nameError.innerHTML = "Please enter your name!";
     } else if (email.value === '' || email == null){
         nameError.innerHTML = "";
@@ -141,17 +140,34 @@ function validateForm(e){
         cardNameError = "This field is required!"
     } else {
         const pD = new Object();
-        pD.userName = name.value;
-        pD.userEmail = email.value;
-        pD.userPhone = phone.value;
-        pD.userAddress = address.value;
-        pD.userCardNo = cardNo.value;
-        pD.userCardName = cardName.value;
-        pD.userCardDate = cardDate.value;
-        pD.userCvv = cardCvv.value;
+        pD.userName = myStorage.setItem("name", name1.value);
+        pD.userEmail = myStorage.setItem("email", email.value);
+        pD.userPhone = myStorage.setItem("phone", phone.value);
+        pD.userAddress = myStorage.setItem("address", address.value);
+        pD.userCardNo = myStorage.setItem("cardNo", cardNo.value);
+        pD.userCardName = myStorage.setItem("cardName", cardName.value);
+        pD.userCardDate = myStorage.setItem("cardDate", cardDate.value);
+        pD.userCvv = myStorage.setItem("cardCvv", cardCvv.value);
 
-        console.log(pD.userName, pD.userAddress);
-        bindDetailsToDropDown(pD)
+        alert("Works!");
+
+        // const pD = new Object();
+        // pD.userName = name.value;
+        // pD.userEmail = email.value;
+        // pD.userPhone = phone.value;
+        // pD.userAddress = address.value;
+        // pD.userCardNo = cardNo.value;
+        // pD.userCardName = cardName.value;
+        // pD.userCardDate = cardDate.value;
+        // pD.userCvv = cardCvv.value;
+
+        // console.log(pD.userName, pD.userAddress);
+        // let x = JSON.stringify(pD);
+        // window.location = "user.json?x=" + x;
+        // console.log(x);
+        // let postData = new XMLHttpRequest();
+        // postData.open("POST", "userInfo.json");
+        // postData.send(x);
         
         
     }
