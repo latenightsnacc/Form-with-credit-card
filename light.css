@@ -216,6 +216,11 @@
   font-family: "Slabo 27px", serif;
 }
 
+.card:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px #fafafa;
+          box-shadow: 2px 2px 5px 2px #fafafa;
+}
+
 #form {
   max-width: 600px;
 }
@@ -256,4 +261,4 @@
     width: 400px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=light.css.map */

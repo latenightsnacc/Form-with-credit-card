@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Slabo+27px|Staatliches&display=swap");
+.title {
+  color: #0294a5;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-family: "Staatliches", cursive;
+}
+
+#form {
+  background-color: #04060f;
+  color: #0294a5;
+}
+
+#form input {
+  background-color: #04060f;
+  color: #0294a5;
+  border-bottom-color: #03353e;
+}
+
+#form input::-webkit-input-placeholder {
+  color: #0294a5;
+}
+
+#form input:-ms-input-placeholder {
+  color: #0294a5;
+}
+
+#form input::-ms-input-placeholder {
+  color: #0294a5;
+}
+
+#form input::placeholder {
+  color: #0294a5;
+}
+
+.card {
+  background-color: #c1403d;
+}
+
+.card .card-logo {
+  padding: 10px;
+}
+
+.card .card-logo img {
+  max-width: 100px;
+}
+
+.card input {
+  color: #03353e !important;
+  background-color: #c1403d !important;
+  text-transform: uppercase;
+  border-bottom-color: #a79c93;
+  border: none;
+  font-family: "Slabo 27px", serif;
+}
+
+.card:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px #fafafa;
+          box-shadow: 2px 2px 5px 2px #fafafa;
+}
+
+#form {
+  max-width: 600px;
+}
+
+#form .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  width: 90%;
+}
+
+#form .form-row input {
+  padding: 15px;
+  outline: none;
+  font-family: "Acme", sans-serif;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.w-500 {
+  width: 500px;
+}
+
+.btn {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: red;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #03353e;
+  color: #a79c93;
+}
+
+@media screen and (max-width: 600px) {
+  .w-500 {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=dark.css.map */

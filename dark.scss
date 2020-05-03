@@ -1,0 +1,86 @@
+@import 'variables';
+    .title{
+        color: $blue4;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-family: $title;
+    }
+    #form {
+        background-color: $black4;
+        color: $blue4;
+
+        input{
+            background-color: $black4;
+            color: $blue4;
+            border-bottom-color: $dark4;
+
+            &::placeholder{
+                color: $blue4;
+            }
+        }
+    }
+    .card{
+        background-color: $red4;
+
+        .card-logo{
+            padding: 10px;
+            img{
+                max-width: 100px;
+            }
+        }
+
+        input{
+            color: $dark4 !important;
+            background-color: $red4 !important;
+            text-transform: uppercase;
+            border-bottom-color: $khaki;
+            border: none;
+            font-family: $card;
+        }
+
+        &:hover{
+            box-shadow: $box-shadow;
+        }
+    }
+    #form{
+        max-width: 600px;
+        .form-row{
+            display: flex;
+            padding: 10px;
+            width: 90%;
+            input{
+                padding: 15px;
+                outline: none;
+                font-family: $form;
+                border: none;
+                border-bottom: 1px solid;
+            }
+        }
+    }
+    
+    .w-500{
+        width: 500px;
+    }
+    .btn{
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        background-color: red;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+
+        &:hover{
+            background-color: $dark4;
+            color: $khaki;
+        }
+    }
+    @media screen and (max-width:600px){
+        .w-500{
+            width: 400px;
+        }
+    }
